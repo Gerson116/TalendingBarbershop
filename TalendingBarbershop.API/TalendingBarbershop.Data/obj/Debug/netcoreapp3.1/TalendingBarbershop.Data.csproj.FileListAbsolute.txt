@@ -1,0 +1,10 @@
+C:\Users\Lenovo\Documents\repos\TalendingBarbershop\TalendingBarbershop.API\TalendingBarbershop.Data\bin\Debug\netcoreapp3.1\TalendingBarbershop.Data.deps.json
+C:\Users\Lenovo\Documents\repos\TalendingBarbershop\TalendingBarbershop.API\TalendingBarbershop.Data\bin\Debug\netcoreapp3.1\TalendingBarbershop.Data.dll
+C:\Users\Lenovo\Documents\repos\TalendingBarbershop\TalendingBarbershop.API\TalendingBarbershop.Data\bin\Debug\netcoreapp3.1\TalendingBarbershop.Data.pdb
+C:\Users\Lenovo\Documents\repos\TalendingBarbershop\TalendingBarbershop.API\TalendingBarbershop.Data\obj\Debug\netcoreapp3.1\TalendingBarbershop.Data.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Documents\repos\TalendingBarbershop\TalendingBarbershop.API\TalendingBarbershop.Data\obj\Debug\netcoreapp3.1\TalendingBarbershop.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Documents\repos\TalendingBarbershop\TalendingBarbershop.API\TalendingBarbershop.Data\obj\Debug\netcoreapp3.1\TalendingBarbershop.Data.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Documents\repos\TalendingBarbershop\TalendingBarbershop.API\TalendingBarbershop.Data\obj\Debug\netcoreapp3.1\TalendingBarbershop.Data.AssemblyInfo.cs
+C:\Users\Lenovo\Documents\repos\TalendingBarbershop\TalendingBarbershop.API\TalendingBarbershop.Data\obj\Debug\netcoreapp3.1\TalendingBarbershop.Data.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Documents\repos\TalendingBarbershop\TalendingBarbershop.API\TalendingBarbershop.Data\obj\Debug\netcoreapp3.1\TalendingBarbershop.Data.dll
+C:\Users\Lenovo\Documents\repos\TalendingBarbershop\TalendingBarbershop.API\TalendingBarbershop.Data\obj\Debug\netcoreapp3.1\TalendingBarbershop.Data.pdb
