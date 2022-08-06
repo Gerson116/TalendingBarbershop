@@ -66,6 +66,7 @@ C:\Users\Lenovo\Documents\repos\TalendingBarbershop\TalendingBarbershop.API\Tale
 C:\Users\Lenovo\Documents\repos\TalendingBarbershop\TalendingBarbershop.API\TalendingBarbershop.API\obj\Debug\netcoreapp3.1\TalendingBarbershop.API.dll
 C:\Users\Lenovo\Documents\repos\TalendingBarbershop\TalendingBarbershop.API\TalendingBarbershop.API\obj\Debug\netcoreapp3.1\TalendingBarbershop.API.pdb
 C:\Users\Lenovo\Documents\repos\TalendingBarbershop\TalendingBarbershop.API\TalendingBarbershop.API\obj\Debug\netcoreapp3.1\TalendingBarbershop.API.genruntimeconfig.cache
+<<<<<<< HEAD
 C:\Users\Heger Arias Santos\Desktop\bootcamp\final-backend\TalendingBarbershop.API\TalendingBarbershop.API\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Heger Arias Santos\Desktop\bootcamp\final-backend\TalendingBarbershop.API\TalendingBarbershop.API\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\Heger Arias Santos\Desktop\bootcamp\final-backend\TalendingBarbershop.API\TalendingBarbershop.API\bin\Debug\netcoreapp3.1\TalendingBarbershop.API.exe
@@ -134,3 +135,11 @@ C:\Users\Heger Arias Santos\Desktop\bootcamp\final-backend\TalendingBarbershop.A
 C:\Users\Heger Arias Santos\Desktop\bootcamp\final-backend\TalendingBarbershop.API\TalendingBarbershop.API\obj\Debug\netcoreapp3.1\TalendingBarbershop.API.dll
 C:\Users\Heger Arias Santos\Desktop\bootcamp\final-backend\TalendingBarbershop.API\TalendingBarbershop.API\obj\Debug\netcoreapp3.1\TalendingBarbershop.API.pdb
 C:\Users\Heger Arias Santos\Desktop\bootcamp\final-backend\TalendingBarbershop.API\TalendingBarbershop.API\obj\Debug\netcoreapp3.1\TalendingBarbershop.API.genruntimeconfig.cache
+=======
+C:\Users\Lenovo\Documents\repos\TalendingBarbershop\TalendingBarbershop.API\TalendingBarbershop.API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Lenovo\Documents\repos\TalendingBarbershop\TalendingBarbershop.API\TalendingBarbershop.API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.DataProtection.dll
+C:\Users\Lenovo\Documents\repos\TalendingBarbershop\TalendingBarbershop.API\TalendingBarbershop.API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+C:\Users\Lenovo\Documents\repos\TalendingBarbershop\TalendingBarbershop.API\TalendingBarbershop.API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.DataProtection.EntityFrameworkCore.dll
+C:\Users\Lenovo\Documents\repos\TalendingBarbershop\TalendingBarbershop.API\TalendingBarbershop.API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Lenovo\Documents\repos\TalendingBarbershop\TalendingBarbershop.API\TalendingBarbershop.API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Hosting.Abstractions.dll
+>>>>>>> 6ec94b7ff2349ca673bfb8f18d566dfbf2719a4e
