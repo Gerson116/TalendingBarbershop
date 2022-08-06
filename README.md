@@ -13,6 +13,15 @@ Al clonar el repositorio, debe ejecutar buscar el project TalendingBarbershop.Da
 Se deben agregar estos dos tipos de roles (Barbero y Clientes) en la base de datos ya que son los iniciales.
 
 use DbTalendigBarbershop
-go
+GO
+<br>
 insert into tblRoles values('Barbero'),('Cliente')
+go
+
+# Insertar los siguientes tipos de pago
+
+use DbTalendigBarbershop
+GO
+<br>
+insert into tblPaidTypes values('tarjeta de credito'),('efectivo')
 go
