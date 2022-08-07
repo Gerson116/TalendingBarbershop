@@ -11,6 +11,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TalendingBarbershop.Data.DTOs;
 using TalendingBarbershop.Data.Models;
 using TalendingBarbershop.Services.Login;
 
@@ -28,6 +29,14 @@ namespace TalendingBarbershop.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddControllersWithViews().AddNewtonsoftJson(options =>
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+            );
+            services.AddAutoMapper(option =>
+            {
+                option.CreateMap<TblOrders, TblOrderDTO>().ReverseMap();
+                option.CreateMap<TblServices, TblServicesDTO>().ReverseMap();
+            });
             services.AddTransient<ILogin, Login>();
 
             services.AddDbContext<DbTalendigBarbershopContext>(option =>

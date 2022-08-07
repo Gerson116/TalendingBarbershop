@@ -11,6 +11,7 @@ C:\Users\Lenovo\Documents\repos\TalendingBarbershop\TalendingBarbershop.API\Tale
 C:\Users\Heger Arias Santos\Desktop\bootcamp\final-backend\TalendingBarbershop.API\TalendingBarbershop.Data\bin\Debug\netcoreapp3.1\TalendingBarbershop.Data.deps.json
 C:\Users\Heger Arias Santos\Desktop\bootcamp\final-backend\TalendingBarbershop.API\TalendingBarbershop.Data\bin\Debug\netcoreapp3.1\TalendingBarbershop.Data.dll
 C:\Users\Heger Arias Santos\Desktop\bootcamp\final-backend\TalendingBarbershop.API\TalendingBarbershop.Data\bin\Debug\netcoreapp3.1\TalendingBarbershop.Data.pdb
+C:\Users\Heger Arias Santos\Desktop\bootcamp\final-backend\TalendingBarbershop.API\TalendingBarbershop.Data\obj\Debug\netcoreapp3.1\TalendingBarbershop.Data.csproj.AssemblyReference.cache
 C:\Users\Heger Arias Santos\Desktop\bootcamp\final-backend\TalendingBarbershop.API\TalendingBarbershop.Data\obj\Debug\netcoreapp3.1\TalendingBarbershop.Data.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Heger Arias Santos\Desktop\bootcamp\final-backend\TalendingBarbershop.API\TalendingBarbershop.Data\obj\Debug\netcoreapp3.1\TalendingBarbershop.Data.AssemblyInfoInputs.cache
 C:\Users\Heger Arias Santos\Desktop\bootcamp\final-backend\TalendingBarbershop.API\TalendingBarbershop.Data\obj\Debug\netcoreapp3.1\TalendingBarbershop.Data.AssemblyInfo.cs

@@ -22,7 +22,6 @@ namespace TalendingBarbershop.API.Controllers.V1
             _responseToken = new ResponseToken();
             _requestResult = new RequestResult();
         }
-
         [HttpPost("iniciar-sesion")]
         public ActionResult<RequestResult> LogIn([FromBody] LoginPerson login)
         {

@@ -5,7 +5,22 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "c4018d04-0cb4-441a-907a-dcc1945fc0d7": {
+      "ProjectGuid": "c4018d04-0cb4-441a-907a-dcc1945fc0d7",
+      "DisplayName": "TalendingBarbershop.Services",
+      "ColorIndex": 0
+    },
+    "ab2efddd-2201-4ec0-8bf9-f089360c5e6e": {
+      "ProjectGuid": "ab2efddd-2201-4ec0-8bf9-f089360c5e6e",
+      "DisplayName": "TalendingBarbershop.Data",
+      "ColorIndex": 1
+    },
+    "8167551e-b8c5-4a59-bd1a-7056027d2c50": {
+      "ProjectGuid": "8167551e-b8c5-4a59-bd1a-7056027d2c50",
+      "DisplayName": "TalendingBarbershop.API",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 0
+  "NextColorIndex": 3
 }

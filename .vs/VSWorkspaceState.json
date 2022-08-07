@@ -1,6 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\TalendingBarbershop.API",
+    "\\TalendingBarbershop.API\\TalendingBarbershop.API",
+    "\\TalendingBarbershop.API\\TalendingBarbershop.API\\Controllers",
+    "\\TalendingBarbershop.API\\TalendingBarbershop.API\\Controllers\\V1",
+    "\\TalendingBarbershop.API\\TalendingBarbershop.Data"
   ],
+  "SelectedNode": "\\TalendingBarbershop.API\\TalendingBarbershop.API\\Controllers\\V1\\LoginController.cs",
   "PreviewInSolutionExplorer": false
 }

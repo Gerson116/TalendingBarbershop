@@ -1,4 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using TalendingBarbershop.Data.DTOs;
 using TalendingBarbershop.Data.Responses;
 using TalendingBarbershop.Services.Orders;
 
@@ -8,31 +12,63 @@ namespace TalendingBarbershop.API.Controllers.V1
     [ApiController]
     public class OrderController : ControllerBase
     {
+        private IMapper _mapper;
+        public OrderController(IMapper mapper)
+        {
+            _mapper = mapper;
+
+        }
         [HttpGet]
         public async Task<ActionResult<RequestResult>> Get()
         {
-            return await 
+            var orderServices = new Orders(_mapper);
+            var orders = await orderServices.GetAll();
+            return new RequestResult
+            {
+                Message = "Ok",
+                Data = orders,
+                Response = true
+            };
+
+
         }
 
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task<ActionResult<RequestResult>> Get(int id)
         {
-            return "value";
+            var orderServices = new Orders(_mapper);
+            var order = await orderServices.Get(id);
+
+            if (order == null)
+            {
+                return NotFound( new RequestResult
+                {
+                    Message = "Not Found",
+                    Data = null,
+                    Response = false
+                });
+            }
+
+            return new RequestResult
+            {
+                Message = "Ok",
+                Data = order,
+                Response = true
+            };
         }
 
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<ActionResult<RequestResult>> Post([FromBody] TblOrderDTO orderDTO)
         {
-        }
+            var orderServices = new Orders(_mapper);
+            var order = await orderServices.Add(orderDTO);
+            return new RequestResult
+            {
+                Message = "Created",
+                Data = order,
+                Response = true
+            };
 
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
         }
     }
 }

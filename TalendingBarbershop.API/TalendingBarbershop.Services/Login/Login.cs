@@ -90,6 +90,7 @@ namespace TalendingBarbershop.Services.Login
             }
             catch (Exception e)
             {
+            return null;
             }
             return null;
         }
