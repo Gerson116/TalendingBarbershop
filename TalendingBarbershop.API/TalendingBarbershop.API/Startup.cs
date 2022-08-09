@@ -29,7 +29,7 @@ namespace TalendingBarbershop.API
         {
             services.AddDbContext<DbTalendigBarbershopContext>(option =>
             {
-                option.UseSqlServer(Configuration.GetConnectionString("DbTalendigBarbershop"));
+                option.UseSqlServer(Configuration.GetConnectionString("DefaultConnetion"));
             });
             services.AddControllers();
         }

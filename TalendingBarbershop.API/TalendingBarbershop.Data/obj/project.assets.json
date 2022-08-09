@@ -5653,24 +5653,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Lenovo\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Ronny Araujo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj",
+      "projectUniqueName": "C:\\Users\\Ronny Araujo\\Documents\\GitHub\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj",
       "projectName": "TalendingBarbershop.Data",
-      "projectPath": "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj",
-      "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Data\\obj\\",
+      "projectPath": "C:\\Users\\Ronny Araujo\\Documents\\GitHub\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj",
+      "packagesPath": "C:\\Users\\Ronny Araujo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ronny Araujo\\Documents\\GitHub\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Data\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Ronny Araujo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5724,7 +5719,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.107\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
