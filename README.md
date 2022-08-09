@@ -8,11 +8,5 @@ Al clonar el repositorio, debe ejecutar buscar el project TalendingBarbershop.Da
 -> Cambiar el Default project y seleccionar el TalendingBarbershop.Data
 ->update-database
 
-# Insertar los siguientes datos en la tabla tblRoles
-
-Se deben agregar estos dos tipos de roles (Barbero y Clientes) en la base de datos ya que son los iniciales.
-
-use DbTalendigBarbershop
-go
-insert into tblRoles values('Barbero'),('Cliente')
-go
+# Datos Iniciales
+Por defecto se agregar los roles de "Barbero" y "Cliente" al hacer el "update-database"
