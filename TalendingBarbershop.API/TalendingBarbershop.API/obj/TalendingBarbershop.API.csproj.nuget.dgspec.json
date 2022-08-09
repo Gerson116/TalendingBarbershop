@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Heger Arias Santos\\Desktop\\bootcamp\\final-backend\\TalendingBarbershop.API\\TalendingBarbershop.API\\TalendingBarbershop.API.csproj": {}
+    "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.API\\TalendingBarbershop.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Heger Arias Santos\\Desktop\\bootcamp\\final-backend\\TalendingBarbershop.API\\TalendingBarbershop.API\\TalendingBarbershop.API.csproj": {
+    "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.API\\TalendingBarbershop.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Heger Arias Santos\\Desktop\\bootcamp\\final-backend\\TalendingBarbershop.API\\TalendingBarbershop.API\\TalendingBarbershop.API.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.API\\TalendingBarbershop.API.csproj",
         "projectName": "TalendingBarbershop.API",
-        "projectPath": "C:\\Users\\Heger Arias Santos\\Desktop\\bootcamp\\final-backend\\TalendingBarbershop.API\\TalendingBarbershop.API\\TalendingBarbershop.API.csproj",
-        "packagesPath": "C:\\Users\\Heger Arias Santos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Heger Arias Santos\\Desktop\\bootcamp\\final-backend\\TalendingBarbershop.API\\TalendingBarbershop.API\\obj\\",
+        "projectPath": "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.API\\TalendingBarbershop.API.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Heger Arias Santos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +32,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Heger Arias Santos\\Desktop\\bootcamp\\final-backend\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj": {
-                "projectPath": "C:\\Users\\Heger Arias Santos\\Desktop\\bootcamp\\final-backend\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj"
+              "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj": {
+                "projectPath": "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj"
               },
-              "C:\\Users\\Heger Arias Santos\\Desktop\\bootcamp\\final-backend\\TalendingBarbershop.API\\TalendingBarbershop.Services\\TalendingBarbershop.Services.csproj": {
-                "projectPath": "C:\\Users\\Heger Arias Santos\\Desktop\\bootcamp\\final-backend\\TalendingBarbershop.API\\TalendingBarbershop.Services\\TalendingBarbershop.Services.csproj"
+              "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Services\\TalendingBarbershop.Services.csproj": {
+                "projectPath": "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Services\\TalendingBarbershop.Services.csproj"
               }
             }
           }
@@ -58,6 +62,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[11.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.27, )"
             },
             "Microsoft.AspNetCore.DataProtection": {
               "target": "Package",
@@ -112,17 +120,21 @@
         }
       }
     },
-    "C:\\Users\\Heger Arias Santos\\Desktop\\bootcamp\\final-backend\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj": {
+    "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Heger Arias Santos\\Desktop\\bootcamp\\final-backend\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj",
         "projectName": "TalendingBarbershop.Data",
-        "projectPath": "C:\\Users\\Heger Arias Santos\\Desktop\\bootcamp\\final-backend\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj",
-        "packagesPath": "C:\\Users\\Heger Arias Santos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Heger Arias Santos\\Desktop\\bootcamp\\final-backend\\TalendingBarbershop.API\\TalendingBarbershop.Data\\obj\\",
+        "projectPath": "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Heger Arias Santos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -188,17 +200,21 @@
         }
       }
     },
-    "C:\\Users\\Heger Arias Santos\\Desktop\\bootcamp\\final-backend\\TalendingBarbershop.API\\TalendingBarbershop.Services\\TalendingBarbershop.Services.csproj": {
+    "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Services\\TalendingBarbershop.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Heger Arias Santos\\Desktop\\bootcamp\\final-backend\\TalendingBarbershop.API\\TalendingBarbershop.Services\\TalendingBarbershop.Services.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Services\\TalendingBarbershop.Services.csproj",
         "projectName": "TalendingBarbershop.Services",
-        "projectPath": "C:\\Users\\Heger Arias Santos\\Desktop\\bootcamp\\final-backend\\TalendingBarbershop.API\\TalendingBarbershop.Services\\TalendingBarbershop.Services.csproj",
-        "packagesPath": "C:\\Users\\Heger Arias Santos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Heger Arias Santos\\Desktop\\bootcamp\\final-backend\\TalendingBarbershop.API\\TalendingBarbershop.Services\\obj\\",
+        "projectPath": "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Services\\TalendingBarbershop.Services.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Services\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Heger Arias Santos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -212,8 +228,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Heger Arias Santos\\Desktop\\bootcamp\\final-backend\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj": {
-                "projectPath": "C:\\Users\\Heger Arias Santos\\Desktop\\bootcamp\\final-backend\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj"
+              "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj": {
+                "projectPath": "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj"
               }
             }
           }
