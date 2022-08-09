@@ -15,6 +15,7 @@ namespace TalendingBarbershop.Data.DTOs
         [Required]
         [EmailAddress]
         public string Email { get; set; }
+        [Required]
         public string Phone { get; set; }
         [Required]
         public string Username { get; set; }
@@ -22,7 +23,5 @@ namespace TalendingBarbershop.Data.DTOs
         public string Password { get; set; }
         [Required]
         public int? RoleId { get; set; }
-        public DateTime? CreatedAt { get; set; }
-        public DateTime? UpdatedAt { get; set; }
     }
 }
