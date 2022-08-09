@@ -9,6 +9,6 @@
     "\\TalendingBarbershop.API\\TalendingBarbershop.Services",
     "\\TalendingBarbershop.API\\TalendingBarbershop.Services\\ServicesOffered"
   ],
-  "SelectedNode": "\\TalendingBarbershop.API\\TalendingBarbershop.Services\\ServicesOffered\\ServicesOffered.cs",
+  "SelectedNode": "\\TalendingBarbershop.API\\TalendingBarbershop.API\\Controllers\\V1\\ServiceController.cs",
   "PreviewInSolutionExplorer": false
 }
