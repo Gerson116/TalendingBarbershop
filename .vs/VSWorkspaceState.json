@@ -5,8 +5,10 @@
     "\\TalendingBarbershop.API\\TalendingBarbershop.API",
     "\\TalendingBarbershop.API\\TalendingBarbershop.API\\Controllers",
     "\\TalendingBarbershop.API\\TalendingBarbershop.API\\Controllers\\V1",
-    "\\TalendingBarbershop.API\\TalendingBarbershop.Data"
+    "\\TalendingBarbershop.API\\TalendingBarbershop.Data",
+    "\\TalendingBarbershop.API\\TalendingBarbershop.Services",
+    "\\TalendingBarbershop.API\\TalendingBarbershop.Services\\ServicesOffered"
   ],
-  "SelectedNode": "\\TalendingBarbershop.API\\TalendingBarbershop.API\\Controllers\\V1\\LoginController.cs",
+  "SelectedNode": "\\TalendingBarbershop.API\\TalendingBarbershop.Services\\ServicesOffered\\ServicesOffered.cs",
   "PreviewInSolutionExplorer": false
 }
