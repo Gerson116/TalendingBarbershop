@@ -186,7 +186,21 @@ namespace TalendingBarbershop.Data.Models
                     .HasConstraintName("FK_role_id_tblRoles");
             });
 
-            OnModelCreatingPartial(modelBuilder);
+            var rol = new TblRoles()
+            {
+                Id = 1,
+                Name = "Barbero"
+            };
+            modelBuilder.Entity<TblRoles>().HasData(rol);
+
+            rol = new TblRoles()
+            {
+                Id = 2,
+                Name = "Cliente"
+            };
+            modelBuilder.Entity<TblRoles>().HasData(rol);
+
+            base.OnModelCreating(modelBuilder);
         }
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
