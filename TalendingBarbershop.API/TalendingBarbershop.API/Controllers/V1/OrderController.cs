@@ -61,7 +61,7 @@ namespace TalendingBarbershop.API.Controllers.V1
         public async Task<ActionResult<RequestResult>> Post([FromBody] TblOrderDTO orderDTO)
         {
             var orderServices = new Orders(_mapper);
-            var order = await orderServices.Add(orderDTO);
+            var order = await orderServices.Add(orderDTO, orderDTO.ServicesIds);
             return new RequestResult
             {
                 Message = "Created",

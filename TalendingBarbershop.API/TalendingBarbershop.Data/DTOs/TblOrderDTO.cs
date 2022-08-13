@@ -12,5 +12,6 @@ namespace TalendingBarbershop.Data.DTOs
         public bool IsPaid { get; set; }
         [Required]
         public int PaidTypeId { get; set; }
+        public List<int>  ServicesIds { get; set; }
     }
 }
