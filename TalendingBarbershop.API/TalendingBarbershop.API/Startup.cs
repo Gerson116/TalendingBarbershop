@@ -18,6 +18,7 @@ using TalendingBarbershop.Data.DTOs;
 using TalendingBarbershop.Data.Models;
 using TalendingBarbershop.Services.Login;
 using TalendingBarbershop.Services.PersonRegister;
+using TalendingBarbershop.Services.Quotes;
 
 namespace TalendingBarbershop.API
 {
@@ -44,12 +45,14 @@ namespace TalendingBarbershop.API
                 option.CreateMap<TblServices, TblServicesDTO>().ReverseMap();
                 option.CreateMap<TblUsers, TblUsersDTO>().ReverseMap();
             });
+            services.AddTransient<IQuotes, Quotes>();
             services.AddTransient<ILogin, Login>();
             services.AddTransient<IRegister, Register>();
 
             services.AddDbContext<DbTalendigBarbershopContext>(option =>
             {
-                option.UseSqlServer(Configuration.GetConnectionString("DefaultConnetion"));
+                //option.UseSqlServer(Configuration.GetConnectionString("DefaultConnetion"));
+                option.UseSqlServer(Configuration.GetConnectionString("DbTalendigBarbershop"));
             });
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
