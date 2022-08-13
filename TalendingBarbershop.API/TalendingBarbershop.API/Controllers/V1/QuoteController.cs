@@ -23,6 +23,7 @@ namespace TalendingBarbershop.API.Controllers.V1
             return _requestResult;
         }
 
+        //Example
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPut("edit-quote")]
         public async Task<ActionResult<RequestResult>> EditUser([FromBody]int id, TblQuotesDTO quote)
