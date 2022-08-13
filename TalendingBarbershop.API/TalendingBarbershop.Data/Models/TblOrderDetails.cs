@@ -14,5 +14,6 @@ namespace TalendingBarbershop.Data.Models
         public int? OrderId { get; set; }
 
         public virtual TblOrders Order { get; set; }
+        public TblServices Service { get; set; }
     }
 }

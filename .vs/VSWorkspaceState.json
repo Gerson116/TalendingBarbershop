@@ -7,8 +7,9 @@
     "\\TalendingBarbershop.API\\TalendingBarbershop.API\\Controllers\\V1",
     "\\TalendingBarbershop.API\\TalendingBarbershop.Data",
     "\\TalendingBarbershop.API\\TalendingBarbershop.Services",
+    "\\TalendingBarbershop.API\\TalendingBarbershop.Services\\Login",
     "\\TalendingBarbershop.API\\TalendingBarbershop.Services\\ServicesOffered"
   ],
-  "SelectedNode": "\\TalendingBarbershop.API\\TalendingBarbershop.Services\\ServicesOffered\\ServicesOffered.cs",
+  "SelectedNode": "\\README.md",
   "PreviewInSolutionExplorer": false
 }
