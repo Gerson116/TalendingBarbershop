@@ -23,21 +23,38 @@ namespace TalendingBarbershop.Services.Orders
             _mapper = mapper;
         }
 
-        public async Task<TblOrders> Add(TblOrderDTO orderDTO)
+        public async Task<TblOrders> Add(TblOrderDTO orderDTO, List<int> servicesIds)
         {
             _orders = _mapper.Map<TblOrders>(orderDTO);
             _orders.CreatedAt = UnixTimeStamp.Now();
             _orders.IsPaid = false;
-            _orders.PaidType = await _dbContext.TblPaidTypes.FindAsync(_orders.PaidTypeId);
             _dbContext.TblOrders.Add(_orders);
             await _dbContext.SaveChangesAsync();
-            return _orders;
+            foreach(var serviceId in servicesIds)
+            {
+                var orderDetail = new TblOrderDetails
+                {
+                    ServiceId = serviceId,
+                    OrderId = _orders.Id
+                };
+                _dbContext.TblOrderDetails.Add(orderDetail);
+            }
+            await _dbContext.SaveChangesAsync();
+
+            return await _dbContext.Set<TblOrders>()
+                .AsQueryable()
+                .Include(x => x.PaidType)
+                .Include(x => x.TblOrderDetails)
+                .ThenInclude(x => x.Service)
+                .FirstAsync(x => x.Id == _orders.Id);
         }
         public async Task<List<TblOrders>> GetAll()
         { 
              return await _dbContext.Set<TblOrders>()
                .AsQueryable()
                .Include(x => x.PaidType)
+               .Include(x => x.TblOrderDetails)
+                .ThenInclude(x => x.Service)
                .ToListAsync();
         }
         public async Task<TblOrders> Get(int id)
@@ -45,6 +62,8 @@ namespace TalendingBarbershop.Services.Orders
             return await _dbContext.Set<TblOrders>()
                 .AsQueryable()
                 .Include(x=>x.PaidType)
+                .Include(x => x.TblOrderDetails)
+                .ThenInclude(x => x.Service)
                 .FirstAsync(x => x.Id == id);
         }
     }
