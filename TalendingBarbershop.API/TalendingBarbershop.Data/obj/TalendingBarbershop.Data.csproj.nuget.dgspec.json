@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj": {}
+    "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop.Back-End\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj": {
+    "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop.Back-End\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop.Back-End\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj",
         "projectName": "TalendingBarbershop.Data",
-        "projectPath": "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop.Back-End\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Data\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop.Back-End\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

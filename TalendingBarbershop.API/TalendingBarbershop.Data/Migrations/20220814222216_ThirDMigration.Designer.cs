@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TalendingBarbershop.Data.Models;
 
 namespace TalendingBarbershop.Data.Migrations
 {
     [DbContext(typeof(DbTalendigBarbershopContext))]
-    partial class DbTalendigBarbershopContextModelSnapshot : ModelSnapshot
+    [Migration("20220814222216_ThirDMigration")]
+    partial class ThirDMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

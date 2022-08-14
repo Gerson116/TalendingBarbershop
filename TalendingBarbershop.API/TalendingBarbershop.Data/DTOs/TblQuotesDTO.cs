@@ -9,8 +9,8 @@ namespace TalendingBarbershop.Data.DTOs
     {
         public int Id { get; set; }
         [Required]
-        public int? Time { get; set; }
+        public DateTime Time { get; set; }
         [Required]
-        public int? UserId { get; set; }
+        public int UserId { get; set; }
     }
 }
