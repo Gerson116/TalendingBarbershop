@@ -22,18 +22,59 @@ namespace TalendingBarbershop.API.Controllers.V1
             _quote = quotes;
         }
 
+        [HttpGet("list-quote")]
+        public async Task<IActionResult> ListQuote()
+        {
+            _requestResult = await _quote.ListQuote();
+            if (!_requestResult.Response)
+            {
+                return BadRequest(_requestResult);
+            }
+            return Ok(_requestResult);
+        }
+
+        [HttpGet("get-quote/{quoteId}")]
+        public async Task<IActionResult> GetQuote(int quoteId)
+        {
+            _requestResult = await _quote.GetQuotesAsync(quoteId);
+            if (!_requestResult.Response)
+            {
+                return BadRequest(_requestResult);
+            }
+            return Ok(_requestResult);
+        }
+
         [HttpPost("new-quote")]
         public async Task<ActionResult<RequestResult>> AddQuote([FromBody] TblQuotesDTO quote)
         {
             _requestResult = await _quote.AddQuote(quote);
-            return _requestResult;
+            if (!_requestResult.Response)
+            {
+                return BadRequest(_requestResult);
+            }
+            return Ok(_requestResult);
         }
 
         [HttpPut("edit-quote")]
         public async Task<ActionResult<RequestResult>> EditUser([FromBody]TblQuotesDTO quote)
         {
             _requestResult = await _quote.EditQuote(quote);
-            return _requestResult;
+            if (!_requestResult.Response)
+            {
+                return BadRequest(_requestResult);
+            }
+            return Ok(_requestResult);
+        }
+
+        [HttpDelete("delete-quote/{quoteId}")]
+        public async Task<ActionResult<RequestResult>> DeleteUser(int quoteId)
+        {
+            _requestResult = await _quote.DeleteQuote(quoteId);
+            if (!_requestResult.Response)
+            {
+                return BadRequest(_requestResult);
+            }
+            return Ok(_requestResult);
         }
     }
 }

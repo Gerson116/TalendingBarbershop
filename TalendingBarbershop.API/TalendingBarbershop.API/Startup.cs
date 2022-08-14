@@ -41,6 +41,7 @@ namespace TalendingBarbershop.API
 
             services.AddAutoMapper(option =>
             {
+                option.CreateMap<TblQuotes, TblQuotesDTO>().ReverseMap();
                 option.CreateMap<TblOrders, TblOrderDTO>().ReverseMap();
                 option.CreateMap<TblServices, TblServicesDTO>().ReverseMap();
                 option.CreateMap<TblUsers, TblUsersDTO>().ReverseMap();

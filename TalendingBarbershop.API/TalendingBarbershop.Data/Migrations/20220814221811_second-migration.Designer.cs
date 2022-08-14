@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TalendingBarbershop.Data.Models;
 
 namespace TalendingBarbershop.Data.Migrations
 {
     [DbContext(typeof(DbTalendigBarbershopContext))]
-    partial class DbTalendigBarbershopContextModelSnapshot : ModelSnapshot
+    [Migration("20220814221811_second-migration")]
+    partial class secondmigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -98,11 +100,11 @@ namespace TalendingBarbershop.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<DateTime>("Time")
+                    b.Property<DateTime?>("Time")
                         .HasColumnName("time")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("UserId")
+                    b.Property<int?>("UserId")
                         .HasColumnName("user_id")
                         .HasColumnType("int");
 
@@ -261,9 +263,7 @@ namespace TalendingBarbershop.Data.Migrations
                     b.HasOne("TalendingBarbershop.Data.Models.TblUsers", "User")
                         .WithMany("TblQuotes")
                         .HasForeignKey("UserId")
-                        .HasConstraintName("FK_user_id_tblQuotes")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasConstraintName("FK_user_id_tblQuotes");
                 });
 
             modelBuilder.Entity("TalendingBarbershop.Data.Models.TblUsers", b =>

@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TalendingBarbershop.Data.DTOs;
@@ -26,16 +27,22 @@ namespace TalendingBarbershop.Services.Quotes
             _quotes = new TblQuotes();
         }
 
-        public async Task<TblQuotes> GetQuotesAsync(int id) 
+        public async Task<RequestResult> GetQuotesAsync(int id) 
         {
             try
             {
-               await _dbContext.TblQuotes.FindAsync(id);
+
+                _requestResult.Message = "Exito";
+                _requestResult.Data = await _dbContext.TblQuotes.Where(q => q.Id == id).Include(u => u.User).FirstOrDefaultAsync();
+                _requestResult.Response = true;
             }
             catch (Exception ex)
             {
+                _requestResult.Message = ex.Message;
+                _requestResult.Data = null;
+                _requestResult.Response = false;
             }
-            return _quotes;
+            return _requestResult;
         }
 
         public async Task<RequestResult> AddQuote(TblQuotesDTO quote)
@@ -62,7 +69,6 @@ namespace TalendingBarbershop.Services.Quotes
 
         public async Task<RequestResult> EditQuote(TblQuotesDTO quote)
         {
-            
             _quotes = _mapper.Map<TblQuotes>(quote);
             _dbContext.Entry(_quotes).State = EntityState.Modified;
 
@@ -87,10 +93,10 @@ namespace TalendingBarbershop.Services.Quotes
        {
             try
             {
-                _quotes = await GetQuotesAsync(id);
-                if (_quotes != null)
+                _requestResult.Data = await GetQuotesAsync(id);
+                if (_requestResult.Data != null)
                 {
-                    _dbContext.TblQuotes.Remove(_quotes);
+                    _dbContext.TblQuotes.Remove(_requestResult.Data);
 
                     _requestResult.Message = "Exito";
                     _requestResult.Data = "La cita fue eliminada con exito.";
@@ -104,5 +110,22 @@ namespace TalendingBarbershop.Services.Quotes
             }
             return null;
        }
+
+        public async Task<RequestResult> ListQuote()
+        {
+            try
+            {
+                _requestResult.Message = "Exito";
+                _requestResult.Data = await _dbContext.TblQuotes.Include(u => u.User).ToListAsync();
+                _requestResult.Response = true;
+            }
+            catch (Exception ex)
+            {
+                _requestResult.Message = ex.Message;
+                _requestResult.Data = null;
+                _requestResult.Response = false;
+            }
+            return _requestResult;
+        }
     }
 }
