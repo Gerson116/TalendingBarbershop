@@ -21,7 +21,7 @@ namespace TalendingBarbershop.API.Controllers.V1
 
         }
         [HttpGet]
-        public async Task<ActionResult<RequestResult>> Get()
+        public async Task<ActionResult<RequestResult>> GetAll()
         {
             var servicesOffered = new ServicesOffered(_mapper);
             var services = await servicesOffered.GetAll();
@@ -34,6 +34,20 @@ namespace TalendingBarbershop.API.Controllers.V1
 
 
         }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<RequestResult>> Get(int id)
+        {
+            var servicesOffered = new ServicesOffered(_mapper);
+            var services = await servicesOffered.Get(id);
+            return new RequestResult
+            {
+                Message = "Ok",
+                Data = services,
+                Response = true
+            };
+        }
+
 
         [HttpPut("{id}")]
         public async Task<dynamic> Put(int id, [FromBody] TblServicesDTO tblServicesDTO)
@@ -57,13 +71,27 @@ namespace TalendingBarbershop.API.Controllers.V1
                 Response = true
             };
         }
+        [HttpDelete("{id}")]
+        public async Task<dynamic> Delete(int id)
+        {
+            var servicesOffered = new ServicesOffered(_mapper);
+            var service = await servicesOffered.Delete(id);
+           
+
+            return new RequestResult
+            {
+                Message = "Modified",
+                Data = service,
+                Response = true
+            };
+        }
 
         [HttpPost]
         public async Task<ActionResult<RequestResult>> Post([FromBody] TblServicesDTO tblServicesDTO)
         {
             var servicesOffered = new ServicesOffered(_mapper);
             var service = await servicesOffered.Add(tblServicesDTO);
-            return CreatedAtAction("Get", new RequestResult
+            return CreatedAtAction("GetAll", new RequestResult
             {
                 Message = "Created",
                 Data = service,
