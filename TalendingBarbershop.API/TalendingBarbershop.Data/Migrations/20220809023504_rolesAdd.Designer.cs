@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TalendingBarbershop.Data.Models;
 
 namespace TalendingBarbershop.Data.Migrations
 {
     [DbContext(typeof(DbTalendigBarbershopContext))]
-    partial class DbTalendigBarbershopContextModelSnapshot : ModelSnapshot
+    [Migration("20220809023504_rolesAdd")]
+    partial class rolesAdd
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -38,8 +40,6 @@ namespace TalendingBarbershop.Data.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("OrderId");
-
-                    b.HasIndex("ServiceId");
 
                     b.ToTable("tblOrderDetails");
                 });
@@ -98,11 +98,11 @@ namespace TalendingBarbershop.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<DateTime>("Time")
+                    b.Property<int?>("Time")
                         .HasColumnName("time")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("int");
 
-                    b.Property<int>("UserId")
+                    b.Property<int?>("UserId")
                         .HasColumnName("user_id")
                         .HasColumnType("int");
 
@@ -242,10 +242,6 @@ namespace TalendingBarbershop.Data.Migrations
                         .WithMany("TblOrderDetails")
                         .HasForeignKey("OrderId")
                         .HasConstraintName("FK_order_id_tblOrderDetails");
-
-                    b.HasOne("TalendingBarbershop.Data.Models.TblServices", "Service")
-                        .WithMany()
-                        .HasForeignKey("ServiceId");
                 });
 
             modelBuilder.Entity("TalendingBarbershop.Data.Models.TblOrders", b =>
@@ -261,9 +257,7 @@ namespace TalendingBarbershop.Data.Migrations
                     b.HasOne("TalendingBarbershop.Data.Models.TblUsers", "User")
                         .WithMany("TblQuotes")
                         .HasForeignKey("UserId")
-                        .HasConstraintName("FK_user_id_tblQuotes")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasConstraintName("FK_user_id_tblQuotes");
                 });
 
             modelBuilder.Entity("TalendingBarbershop.Data.Models.TblUsers", b =>
