@@ -13,5 +13,7 @@ namespace TalendingBarbershop.Services.ServicesOffered
         Task<TblServices> Add(TblServicesDTO tblServicesDTO);
         Task<TblServices> Edit(int id, TblServicesDTO tblServicesDTO);
         Task<List<TblServices>> GetAll();
+        Task<TblServices> Get(int id);
+        Task<TblServices> Delete(int id);
     }
 }

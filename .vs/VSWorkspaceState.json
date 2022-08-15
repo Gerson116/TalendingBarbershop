@@ -10,6 +10,6 @@
     "\\TalendingBarbershop.API\\TalendingBarbershop.Services\\Login",
     "\\TalendingBarbershop.API\\TalendingBarbershop.Services\\ServicesOffered"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\TalendingBarbershop.API\\TalendingBarbershop.API\\Controllers\\V1\\OrderController.cs",
   "PreviewInSolutionExplorer": false
 }

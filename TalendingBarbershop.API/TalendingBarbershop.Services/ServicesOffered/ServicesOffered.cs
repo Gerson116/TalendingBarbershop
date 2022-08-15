@@ -54,5 +54,21 @@ namespace TalendingBarbershop.Services.ServicesOffered
                .AsQueryable()
                .ToListAsync();
         }
+        public async Task<TblServices> Get(int id)
+        {
+            return await _dbContext.Set<TblServices>()
+               .AsQueryable()
+               .FirstAsync(x => x.Id == id);
+        }
+        public async Task<TblServices> Delete(int id)
+        {
+            var itemToRemove = await _dbContext.TblServices.SingleOrDefaultAsync(x => x.Id == id);
+            if (itemToRemove == null) return null;
+            var item = _mapper.Map<TblServices>(itemToRemove);
+
+            _dbContext.TblServices.Remove(itemToRemove);
+            await _dbContext.SaveChangesAsync();
+            return item;
+        }
     }
 }
