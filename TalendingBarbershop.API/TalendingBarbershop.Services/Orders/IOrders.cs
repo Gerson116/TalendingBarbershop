@@ -13,5 +13,5 @@ namespace TalendingBarbershop.Services.Orders
         Task<TblOrders> Add(TblOrderDTO orderDTO, List<int> servicesIds);
         Task<List<TblOrders>> GetAll();
         Task<TblOrders> Get(int id);
-   }
+    }
 }

@@ -75,6 +75,7 @@ namespace TalendingBarbershop.API
                 option.CreateMap<TblServices, TblServicesDTO>().ReverseMap();
                 option.CreateMap<TblUsers, TblUsersDTO>().ReverseMap();
             });
+
             services.AddTransient<IQuotes, Quotes>();
             services.AddTransient<ILogin, Login>();
             services.AddTransient<IRegister, Register>();

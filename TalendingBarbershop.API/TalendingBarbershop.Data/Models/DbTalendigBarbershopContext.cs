@@ -31,7 +31,7 @@ namespace TalendingBarbershop.Data.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
                 optionsBuilder.UseSqlServer("Data Source = .; Initial Catalog = DbTalendigBarbershop; Integrated Security = True");
             }
         }
@@ -41,6 +41,8 @@ namespace TalendingBarbershop.Data.Models
             modelBuilder.Entity<TblOrderDetails>(entity =>
             {
                 entity.ToTable("tblOrderDetails");
+
+                entity.HasIndex(e => e.OrderId);
 
                 entity.Property(e => e.Id).HasColumnName("id");
 
@@ -57,6 +59,8 @@ namespace TalendingBarbershop.Data.Models
             modelBuilder.Entity<TblOrders>(entity =>
             {
                 entity.ToTable("tblOrders");
+
+                entity.HasIndex(e => e.PaidTypeId);
 
                 entity.Property(e => e.Id).HasColumnName("id");
 
@@ -88,9 +92,13 @@ namespace TalendingBarbershop.Data.Models
             {
                 entity.ToTable("tblQuotes");
 
+                entity.HasIndex(e => e.UserId);
+
                 entity.Property(e => e.Id).HasColumnName("id");
 
-                entity.Property(e => e.Time).HasColumnName("time");
+                entity.Property(e => e.Time)
+                    .HasColumnName("time")
+                    .HasColumnType("datetime");
 
                 entity.Property(e => e.UserId).HasColumnName("user_id");
 
@@ -131,6 +139,8 @@ namespace TalendingBarbershop.Data.Models
             modelBuilder.Entity<TblUsers>(entity =>
             {
                 entity.ToTable("tblUsers");
+
+                entity.HasIndex(e => e.RoleId);
 
                 entity.Property(e => e.Id).HasColumnName("id");
 
@@ -186,21 +196,7 @@ namespace TalendingBarbershop.Data.Models
                     .HasConstraintName("FK_role_id_tblRoles");
             });
 
-            var rol = new TblRoles()
-            {
-                Id = 1,
-                Name = "Barbero"
-            };
-            modelBuilder.Entity<TblRoles>().HasData(rol);
-
-            rol = new TblRoles()
-            {
-                Id = 2,
-                Name = "Cliente"
-            };
-            modelBuilder.Entity<TblRoles>().HasData(rol);
-
-            base.OnModelCreating(modelBuilder);
+            OnModelCreatingPartial(modelBuilder);
         }
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);

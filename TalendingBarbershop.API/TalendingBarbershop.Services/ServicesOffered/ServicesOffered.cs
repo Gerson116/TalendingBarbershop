@@ -45,7 +45,7 @@ namespace TalendingBarbershop.Services.ServicesOffered
             }
 
             return _services;
-           
+
         }
 
         public async Task<List<TblServices>> GetAll()

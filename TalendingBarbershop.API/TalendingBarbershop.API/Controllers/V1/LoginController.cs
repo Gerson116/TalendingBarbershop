@@ -30,7 +30,7 @@ namespace TalendingBarbershop.API.Controllers.V1
         {
             //... This method is use for valid user and access.
             _responseToken = _login.BuilderToken(login);
-            if(_responseToken.Token == string.Empty)
+            if (_responseToken.Token == string.Empty)
             {
                 _requestResult.Message = "Ocurrio un error";
                 _requestResult.Data = "El favor validar los datos con los que intenta iniciar sesion";

@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Heger Arias Santos\\Desktop\\bootcamp\\final-backend\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj": {}
+    "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop.Back-End\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Heger Arias Santos\\Desktop\\bootcamp\\final-backend\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj": {
+    "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop.Back-End\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Heger Arias Santos\\Desktop\\bootcamp\\final-backend\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop.Back-End\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj",
         "projectName": "TalendingBarbershop.Data",
-        "projectPath": "C:\\Users\\Heger Arias Santos\\Desktop\\bootcamp\\final-backend\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj",
-        "packagesPath": "C:\\Users\\Heger Arias Santos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Heger Arias Santos\\Desktop\\bootcamp\\final-backend\\TalendingBarbershop.API\\TalendingBarbershop.Data\\obj\\",
+        "projectPath": "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop.Back-End\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop.Back-End\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Heger Arias Santos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -53,6 +57,12 @@
               "version": "[3.1.27, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.27, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.27, )"
             },

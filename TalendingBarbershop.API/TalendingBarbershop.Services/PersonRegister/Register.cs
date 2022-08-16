@@ -58,7 +58,7 @@ namespace TalendingBarbershop.Services.PersonRegister
                 _user = _mapper.Map<TblUsers>(person);
                 _user.UpdatedAt = DateTime.Now;
                 _dbContext.Entry(_user).State = EntityState.Modified;
-                //await _dbContext.SaveChangesAsync();
+                await _dbContext.SaveChangesAsync();
 
                 _requestResult.Message = "Exito";
                 _requestResult.Data = "Datos modficado con exito.";

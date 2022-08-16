@@ -30,7 +30,7 @@ namespace TalendingBarbershop.Services.Orders
             _orders.IsPaid = false;
             _dbContext.TblOrders.Add(_orders);
             await _dbContext.SaveChangesAsync();
-            foreach(var serviceId in servicesIds)
+            foreach (var serviceId in servicesIds)
             {
                 var orderDetail = new TblOrderDetails
                 {
@@ -45,25 +45,25 @@ namespace TalendingBarbershop.Services.Orders
                 .AsQueryable()
                 .Include(x => x.PaidType)
                 .Include(x => x.TblOrderDetails)
-                .ThenInclude(x => x.Service)
+                .ThenInclude(x => x.ServiceId)
                 .FirstAsync(x => x.Id == _orders.Id);
         }
         public async Task<List<TblOrders>> GetAll()
-        { 
-             return await _dbContext.Set<TblOrders>()
-               .AsQueryable()
-               .Include(x => x.PaidType)
-               .Include(x => x.TblOrderDetails)
-                .ThenInclude(x => x.Service)
-               .ToListAsync();
+        {
+            return await _dbContext.Set<TblOrders>()
+              .AsQueryable()
+              .Include(x => x.PaidType)
+              .Include(x => x.TblOrderDetails)
+               .ThenInclude(x => x.ServiceId)
+              .ToListAsync();
         }
         public async Task<TblOrders> Get(int id)
         {
             return await _dbContext.Set<TblOrders>()
                 .AsQueryable()
-                .Include(x=>x.PaidType)
+                .Include(x => x.PaidType)
                 .Include(x => x.TblOrderDetails)
-                .ThenInclude(x => x.Service)
+                .ThenInclude(x => x.ServiceId)
                 .FirstAsync(x => x.Id == id);
         }
     }
