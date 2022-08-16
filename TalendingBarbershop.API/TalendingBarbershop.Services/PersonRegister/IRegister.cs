@@ -9,7 +9,7 @@ namespace TalendingBarbershop.Services.PersonRegister
 {
     public interface IRegister
     {
-        Task<RequestResult> AddPerson(TblUsersDTO person);
-        Task<RequestResult> EditPerson(TblUsersDTO person);
+        //Task<RequestResult> AddPerson(TblUsersDTO person);
+        //Task<RequestResult> EditPerson(TblUsersDTO person);
     }
 }
