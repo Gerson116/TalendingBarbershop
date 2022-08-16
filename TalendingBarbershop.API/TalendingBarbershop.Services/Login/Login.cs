@@ -52,8 +52,8 @@ namespace TalendingBarbershop.Services.Login
                 };
             }
 
-            claims.Add( new Claim( userName, rolAsignado.Username) );
-            claims.Add( new Claim( rolName, rolAsignado.RoleId.ToString() ) );
+            claims.Add(new Claim(userName, rolAsignado.Username));
+            claims.Add(new Claim(rolName, rolAsignado.RoleId.ToString()));
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWTkey"]));
 
@@ -90,7 +90,7 @@ namespace TalendingBarbershop.Services.Login
             }
             catch (Exception e)
             {
-            return null;
+                return null;
             }
             return null;
         }

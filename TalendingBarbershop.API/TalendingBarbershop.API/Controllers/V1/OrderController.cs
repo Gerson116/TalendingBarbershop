@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using TalendingBarbershop.Data.DTOs;
@@ -29,8 +30,6 @@ namespace TalendingBarbershop.API.Controllers.V1
                 Data = orders,
                 Response = true
             };
-
-
         }
 
         [HttpGet("{id}")]
@@ -41,7 +40,7 @@ namespace TalendingBarbershop.API.Controllers.V1
 
             if (order == null)
             {
-                return NotFound( new RequestResult
+                return NotFound(new RequestResult
                 {
                     Message = "Not Found",
                     Data = null,
@@ -68,7 +67,6 @@ namespace TalendingBarbershop.API.Controllers.V1
                 Data = order,
                 Response = true
             };
-
         }
     }
 }

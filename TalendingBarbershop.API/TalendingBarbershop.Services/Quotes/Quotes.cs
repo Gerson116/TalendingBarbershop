@@ -27,7 +27,7 @@ namespace TalendingBarbershop.Services.Quotes
             _quotes = new TblQuotes();
         }
 
-        public async Task<RequestResult> GetQuotesAsync(int id) 
+        public async Task<RequestResult> GetQuotesAsync(int id)
         {
             try
             {
@@ -47,8 +47,8 @@ namespace TalendingBarbershop.Services.Quotes
 
         public async Task<RequestResult> AddQuote(TblQuotesDTO quote)
         {
-            try 
-            { 
+            try
+            {
                 _quotes = _mapper.Map<TblQuotes>(quote);
                 await _dbContext.TblQuotes.AddAsync(_quotes);
                 await _dbContext.SaveChangesAsync();
@@ -57,7 +57,8 @@ namespace TalendingBarbershop.Services.Quotes
                 _requestResult.Data = "La cita fue agregado con exito.";
                 _requestResult.Response = true;
 
-            } catch(Exception ex) 
+            }
+            catch (Exception ex)
             {
                 _requestResult.Message = ex.Message;
                 _requestResult.Data = null;
@@ -89,8 +90,8 @@ namespace TalendingBarbershop.Services.Quotes
             return _requestResult;
         }
 
-       public async Task<RequestResult> DeleteQuote(int id)
-       {
+        public async Task<RequestResult> DeleteQuote(int id)
+        {
             try
             {
                 _requestResult.Data = await GetQuotesAsync(id);
@@ -102,14 +103,15 @@ namespace TalendingBarbershop.Services.Quotes
                     _requestResult.Data = "La cita fue eliminada con exito.";
                     _requestResult.Response = true;
                 }
-            } catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 _requestResult.Message = ex.Message;
                 _requestResult.Data = null;
                 _requestResult.Response = false;
             }
             return null;
-       }
+        }
 
         public async Task<RequestResult> ListQuote()
         {

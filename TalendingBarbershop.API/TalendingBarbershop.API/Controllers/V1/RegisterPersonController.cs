@@ -12,7 +12,6 @@ namespace TalendingBarbershop.API.Controllers.V1
 {
     [Route("api/[controller]")]
     [ApiController]
-    //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class RegisterPersonController : ControllerBase
     {
         private IRegister _register;

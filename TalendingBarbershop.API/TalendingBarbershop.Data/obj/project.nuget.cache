@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gcRKYwn/nG7qbSWlRAx3gpfVbN29SpP5cgRmE1YFuBO8bHP2n3dMwWMW7AAJ49YqvHY+Nfzv7QTN4JxndN5fTQ==",
+  "dgSpecHash": "sCwkLWhBh/hU8iW/IumfjPOm1I8BAkvszn0ty4K++nunlcz9AGw0OpiohihEKWf7wikvTV/HGU5XHcsLfZ4+gQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Lenovo\\Documents\\repos\\TalendingBarbershop.Back-End\\TalendingBarbershop\\TalendingBarbershop.API\\TalendingBarbershop.Data\\TalendingBarbershop.Data.csproj",
   "expectedPackageFiles": [
@@ -13,8 +13,10 @@
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.entityframeworkcore\\3.1.27\\microsoft.entityframeworkcore.3.1.27.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\3.1.27\\microsoft.entityframeworkcore.abstractions.3.1.27.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\3.1.27\\microsoft.entityframeworkcore.analyzers.3.1.27.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.entityframeworkcore.design\\3.1.27\\microsoft.entityframeworkcore.design.3.1.27.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\3.1.27\\microsoft.entityframeworkcore.relational.3.1.27.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\3.1.27\\microsoft.entityframeworkcore.sqlserver.3.1.27.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\3.1.27\\microsoft.entityframeworkcore.tools.3.1.27.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.27\\microsoft.extensions.caching.abstractions.3.1.27.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.extensions.caching.memory\\3.1.27\\microsoft.extensions.caching.memory.3.1.27.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.27\\microsoft.extensions.configuration.3.1.27.nupkg.sha512",

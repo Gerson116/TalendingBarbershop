@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using TalendingBarbershop.Data.DTOs;
@@ -31,8 +32,6 @@ namespace TalendingBarbershop.API.Controllers.V1
                 Data = services,
                 Response = true
             };
-
-
         }
 
         [HttpGet("{id}")]
@@ -76,7 +75,6 @@ namespace TalendingBarbershop.API.Controllers.V1
         {
             var servicesOffered = new ServicesOffered(_mapper);
             var service = await servicesOffered.Delete(id);
-           
 
             return new RequestResult
             {
@@ -97,7 +95,6 @@ namespace TalendingBarbershop.API.Controllers.V1
                 Data = service,
                 Response = true
             });
-
         }
     }
 }
