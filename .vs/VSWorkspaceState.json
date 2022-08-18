@@ -6,10 +6,11 @@
     "\\TalendingBarbershop.API\\TalendingBarbershop.API\\Controllers",
     "\\TalendingBarbershop.API\\TalendingBarbershop.API\\Controllers\\V1",
     "\\TalendingBarbershop.API\\TalendingBarbershop.Data",
+    "\\TalendingBarbershop.API\\TalendingBarbershop.Data\\DTOs",
     "\\TalendingBarbershop.API\\TalendingBarbershop.Services",
     "\\TalendingBarbershop.API\\TalendingBarbershop.Services\\Login",
     "\\TalendingBarbershop.API\\TalendingBarbershop.Services\\ServicesOffered"
   ],
-  "SelectedNode": "\\TalendingBarbershop.API\\TalendingBarbershop.API\\Controllers\\V1\\OrderController.cs",
+  "SelectedNode": "\\TalendingBarbershop.API\\TalendingBarbershop.API\\Controllers\\V1\\QuoteController.cs",
   "PreviewInSolutionExplorer": false
 }

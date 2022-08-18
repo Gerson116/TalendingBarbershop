@@ -8,6 +8,8 @@ namespace TalendingBarbershop.Data.Responses
     {
         public string Token { get; set; }
         public DateTime Expiration { get; set; }
+        public string PersonName { get; set; }
+        public int PersonId { get; set; }
         public int ? RolPerson { get; set; }
     }
 }

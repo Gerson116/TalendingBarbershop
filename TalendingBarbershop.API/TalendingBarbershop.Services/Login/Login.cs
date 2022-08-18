@@ -73,7 +73,9 @@ namespace TalendingBarbershop.Services.Login
                 // La clase que es se esta retornando fue la creada en el curso
                 Token = new JwtSecurityTokenHandler().WriteToken(token),
                 Expiration = expiration,
-                RolPerson = rolAsignado.RoleId
+                RolPerson = rolAsignado.RoleId,
+                PersonName = rolAsignado.Name + " " + rolAsignado.LastName,
+                PersonId = rolAsignado.Id
             };
         }
 
